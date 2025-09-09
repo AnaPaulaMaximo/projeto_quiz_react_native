@@ -1,0 +1,52 @@
+[
+  {
+    "question": "Qual é o nome do parque de diversões anatômico que Rick constrói dentro de um sem-teto?",
+    "options": ["Anatomy Park", "Guts World", "Spleen Mountain", "Colon Kingdom"],
+    "correctAnswer": "Anatomy Park"
+  },
+  {
+    "question": "Qual espécie alienígena é o melhor amigo de Rick, Birdperson?",
+    "options": ["Gromflomite", "Zigerion", "Pessoa-Pássaro", "Meeseeks"],
+    "correctAnswer": "Pessoa-Pássaro"
+  },
+  {
+    "question": "Na Cidadela, qual Morty se torna presidente?",
+    "options": ["Evil Morty", "Cop Morty", "Doofus Rick's Morty", "The One True Morty"],
+    "correctAnswer": "Evil Morty"
+  },
+  {
+    "question": "Qual é o bordão de Rick?",
+    "options": ["Wubba Lubba Dub Dub", "To infinity and beyond!", "I have a bad feeling about this", "Get Schwifty"],
+    "correctAnswer": "Wubba Lubba Dub Dub"
+  },
+  {
+    "question": "Como se chama a ex-namorada de Rick que é uma mente coletiva?",
+    "options": ["Gaia", "Unity", "Supernova", "Daphne"],
+    "correctAnswer": "Unity"
+  },
+  {
+    "question": "Qual é o nome da banda em que Rick, Birdperson e Squanchy tocavam?",
+    "options": ["The Flesh Curtains", "The Cromulons", "The Vindicators", "Get Schwifty"],
+    "correctAnswer": "The Flesh Curtains"
+  },
+  {
+    "question": "Qual é o único propósito de um Mr. Meeseeks?",
+    "options": ["Conquistar o universo", "Servir como mordomos", "Cumprir uma única tarefa e deixar de existir", "Ser o melhor amigo de alguém"],
+    "correctAnswer": "Cumprir uma única tarefa e deixar de existir"
+  },
+  {
+    "question": "Que jogo de realidade virtual Rick joga no fliperama Blips and Chitz?",
+    "options": ["Truck Simulator", "Roy: A Life Well Lived", "Whirly Dirly", "Ska-Ball"],
+    "correctAnswer": "Roy: A Life Well Lived"
+  },
+  {
+    "question": "Qual é o nome do micro-universo que Rick cria para alimentar a bateria do seu carro?",
+    "options": ["Miniverse", "Tinyverse", "Smallverse", "Microverse"],
+    "correctAnswer": "Microverse"
+  },
+  {
+    "question": "Qual foi o slogan de publicidade fracassado de Jerry para maçãs?",
+    "options": ["Apples: They're great!", "Hungry for Apples?", "Got Apples?", "An Apple a Day!"],
+    "correctAnswer": "Hungry for Apples?"
+  }
+]
