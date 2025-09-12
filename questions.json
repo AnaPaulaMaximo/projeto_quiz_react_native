@@ -1,52 +1,118 @@
 [
   {
-    "question": "Qual é o nome do parque de diversões anatômico que Rick constrói dentro de um sem-teto?",
-    "options": ["Anatomy Park", "Guts World", "Spleen Mountain", "Colon Kingdom"],
+    "question": "Qual dimensão é considerada a de origem de Rick?",
+    "options": ["C-137", "D-199", "Z-15", "A-001"],
+    "correctAnswer": "C-137"
+  },
+  {
+    "question": "Qual invenção Rick usa para viajar entre universos?",
+    "options": ["Portal Gun", "Time Machine", "Dimension Watch", "Multiverse Key"],
+    "correctAnswer": "Portal Gun"
+  },
+  {
+    "question": "Qual personagem trai Birdperson durante o casamento?",
+    "options": ["Tammy", "Unity", "Summer", "Beth"],
+    "correctAnswer": "Tammy"
+  },
+  {
+    "question": "Qual slogan fracassado Jerry tentou vender em um comercial?",
+    "options": ["Hungry for Apples?", "Got Apples?", "Fresh Like Apples", "An Apple a Day!"],
+    "correctAnswer": "Hungry for Apples?"
+  },
+  {
+    "question": "Qual é o nome do parque que fica dentro do corpo humano?",
+    "options": ["Anatomy Park", "Bodyland", "Organ World", "Inside Fun"],
     "correctAnswer": "Anatomy Park"
   },
   {
-    "question": "Qual espécie alienígena é o melhor amigo de Rick, Birdperson?",
-    "options": ["Gromflomite", "Zigerion", "Pessoa-Pássaro", "Meeseeks"],
-    "correctAnswer": "Pessoa-Pássaro"
+    "question": "Quem é o cientista que Rick escraviza dentro do Microverso?",
+    "options": ["Zeep Xanflorp", "Krombopulos Michael", "Gearhead", "Squanchy"],
+    "correctAnswer": "Zeep Xanflorp"
   },
   {
-    "question": "Na Cidadela, qual Morty se torna presidente?",
-    "options": ["Evil Morty", "Cop Morty", "Doofus Rick's Morty", "The One True Morty"],
+    "question": "Qual personagem é um assassino de aluguel alienígena?",
+    "options": ["Krombopulos Michael", "Birdperson", "Mr. Nimbus", "Squanchy"],
+    "correctAnswer": "Krombopulos Michael"
+  },
+  {
+    "question": "Qual Morty se torna presidente da Cidadela?",
+    "options": ["Evil Morty", "Doofus Morty", "Cop Morty", "Smart Morty"],
     "correctAnswer": "Evil Morty"
   },
   {
-    "question": "Qual é o bordão de Rick?",
-    "options": ["Wubba Lubba Dub Dub", "To infinity and beyond!", "I have a bad feeling about this", "Get Schwifty"],
-    "correctAnswer": "Wubba Lubba Dub Dub"
-  },
-  {
-    "question": "Como se chama a ex-namorada de Rick que é uma mente coletiva?",
-    "options": ["Gaia", "Unity", "Supernova", "Daphne"],
-    "correctAnswer": "Unity"
-  },
-  {
-    "question": "Qual é o nome da banda em que Rick, Birdperson e Squanchy tocavam?",
-    "options": ["The Flesh Curtains", "The Cromulons", "The Vindicators", "Get Schwifty"],
-    "correctAnswer": "The Flesh Curtains"
-  },
-  {
-    "question": "Qual é o único propósito de um Mr. Meeseeks?",
-    "options": ["Conquistar o universo", "Servir como mordomos", "Cumprir uma única tarefa e deixar de existir", "Ser o melhor amigo de alguém"],
-    "correctAnswer": "Cumprir uma única tarefa e deixar de existir"
-  },
-  {
-    "question": "Que jogo de realidade virtual Rick joga no fliperama Blips and Chitz?",
-    "options": ["Truck Simulator", "Roy: A Life Well Lived", "Whirly Dirly", "Ska-Ball"],
+    "question": "Qual jogo Rick joga no fliperama Blips and Chitz?",
+    "options": ["Roy: A Life Well Lived", "Truck Simulator", "Space Invaders", "Life Simulator"],
     "correctAnswer": "Roy: A Life Well Lived"
   },
   {
-    "question": "Qual é o nome do micro-universo que Rick cria para alimentar a bateria do seu carro?",
-    "options": ["Miniverse", "Tinyverse", "Smallverse", "Microverse"],
-    "correctAnswer": "Microverse"
+    "question": "Qual é o bordão que Rick usa em vários episódios?",
+    "options": ["Wubba Lubba Dub Dub", "Get Schwifty", "Let's Go Morty!", "Science Rules!"],
+    "correctAnswer": "Wubba Lubba Dub Dub"
   },
   {
-    "question": "Qual foi o slogan de publicidade fracassado de Jerry para maçãs?",
-    "options": ["Apples: They're great!", "Hungry for Apples?", "Got Apples?", "An Apple a Day!"],
-    "correctAnswer": "Hungry for Apples?"
+    "question": "Qual alienígena é amigo de Rick e costuma dizer 'squanch'?",
+    "options": ["Squanchy", "Birdperson", "Gearhead", "Mr. Meeseeks"],
+    "correctAnswer": "Squanchy"
+  },
+  {
+    "question": "Qual é o nome do cachorro da família que ganha inteligência?",
+    "options": ["Snuffles", "Fluffy", "Rex", "Snowball"],
+    "correctAnswer": "Snuffles"
+  },
+  {
+    "question": "Quem é o personagem que aparece com uma caixa azul para ajudar em tarefas?",
+    "options": ["Mr. Meeseeks", "Squanchy", "Gearhead", "Mr. Nimbus"],
+    "correctAnswer": "Mr. Meeseeks"
+  },
+
+  {
+    "question": "Qual episódio mostra a Terra transformada em 'Cronenbergs'?",
+    "options": ["Rick Potion #9", "Total Rickall", "The Wedding Squanchers", "Get Schwifty"],
+    "correctAnswer": "Rick Potion #9"
+  },
+  {
+    "question": "Qual é o nome da banda em que Rick, Squanchy e Birdperson tocavam?",
+    "options": ["The Flesh Curtains", "The Vindicators", "The Cromulons", "The Get Schwifty Band"],
+    "correctAnswer": "The Flesh Curtains"
+  },
+  {
+    "question": "Quem é a entidade coletiva que já namorou Rick?",
+    "options": ["Unity", "Supernova", "Gaia", "Tammy"],
+    "correctAnswer": "Unity"
+  },
+  {
+    "question": "Qual é o nome dos alienígenas que enganam Rick e Morty em uma simulação?",
+    "options": ["Zigerions", "Cromulons", "Meeseeks", "Gazorpazorpianos"],
+    "correctAnswer": "Zigerions"
+  },
+  {
+    "question": "Quem é a esposa de Jerry?",
+    "options": ["Beth", "Tammy", "Unity", "Summer"],
+    "correctAnswer": "Beth"
+  },
+  {
+    "question": "Qual personagem secundário virou presidente dos EUA na série?",
+    "options": ["Mr. Nimbus", "Evil Morty", "Mr. Poopybutthole", "Ninguém"],
+    "correctAnswer": "Ninguém"
+  },
+  {
+    "question": "Qual planeta é habitado por pássaros e é lar de Birdperson?",
+    "options": ["Bird World", "Gazorpazorp", "Plutão", "Squanchland"],
+    "correctAnswer": "Bird World"
+  },
+  {
+    "question": "Quem é o vilão misterioso que controla a Cidadela?",
+    "options": ["Evil Morty", "Tammy", "Zeep", "Mr. Nimbus"],
+    "correctAnswer": "Evil Morty"
+  },
+  {
+    "question": "Qual personagem usa engrenagens no lugar da cabeça?",
+    "options": ["Gearhead", "Squanchy", "Birdperson", "Mr. Nimbus"],
+    "correctAnswer": "Gearhead"
+  },
+  {
+    "question": "Qual foi a invenção de Rick que gera universos menores para produzir energia?",
+    "options": ["Microverse Battery", "Portal Gun", "Plumbus", "Time Crystal"],
+    "correctAnswer": "Microverse Battery"
   }
 ]

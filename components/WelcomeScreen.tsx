@@ -1,40 +1,29 @@
 import { StyleSheet, Text, View, TouchableOpacity, ImageBackground } from "react-native";
 
-type ResultScreenProps = {
-    score: number;
-    totalQuestions: number;
-    onPlayAgain: () => void;
+type WelcomeScreenProps = {
+    onStartQuiz: () => void;
 };
 
-// 1. Imagem de fundo definida
+// 1. Imagem de fundo ativada
 const backgroundImage = require('../assets/images/background.png');
 
-export default function ResultScreen({ score, totalQuestions, onPlayAgain }: ResultScreenProps) {
-    const getResultMessage = () => {
-        const percentage = (score / totalQuestions) * 100;
-        if (percentage === 100) return "WUBBA LUBBA DUB DUB! Você é um gênio!";
-        if (percentage >= 70) return "Schwifty! Você mandou bem!";
-        if (percentage >= 40) return "Você precisa de mais Szechuan Sauce no cérebro.";
-        return "Ai, caramba! Isso foi constrangedor.";
-    };
-    
+export default function WelcomeScreen({ onStartQuiz }: WelcomeScreenProps) {
     return (
         // 2. O <View> principal foi substituído por <ImageBackground>
         <ImageBackground 
             source={backgroundImage} 
             style={styles.container}
-            resizeMode="cover"
+            resizeMode="cover" // Garante que a imagem cubra toda a tela
         >
             <View style={styles.contentCard}>
-                <Text style={styles.title}>FIM DE JOGO!</Text>
-                <Text style={styles.resultMessage}>{getResultMessage()}</Text>
-                <Text style={styles.scoreText}>
-                    Você acertou {score} de {totalQuestions} perguntas!
+                <Text style={styles.title}>QUIZ RICK AND MORTY</Text>
+                <Text style={styles.description}>
+                    Teste seus conhecimentos sobre o multiverso maluco de Rick and Morty!
                 </Text>
             </View>
 
-            <TouchableOpacity style={styles.button} onPress={onPlayAgain}>
-                <Text style={styles.buttonText}>Jogar Novamente</Text>
+            <TouchableOpacity style={styles.button} onPress={onStartQuiz}>
+                <Text style={styles.buttonText}>Começar!</Text>
             </TouchableOpacity>
         </ImageBackground>
     );
@@ -45,9 +34,9 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        // 3. A cor de fundo foi removida
-        // backgroundColor: '#040C18',
         padding: 20,
+        // 3. A cor de fundo foi removida, pois a imagem agora cuida disso.
+        // backgroundColor: '#040C18', 
     },
     contentCard: {
         backgroundColor: 'rgba(31, 41, 55, 0.8)',
@@ -68,26 +57,19 @@ const styles = StyleSheet.create({
         fontWeight: '900',
         color: '#97F571',
         marginBottom: 20,
+        textAlign: 'center',
         textTransform: 'uppercase',
     },
-    resultMessage: {
-        fontSize: 20,
-        fontWeight: '600',
-        color: '#E5E7EB',
-        textAlign: 'center',
-        marginBottom: 15,
-        fontStyle: 'italic',
-    },
-    scoreText: {
-        fontSize: 22,
+    description: {
+        fontSize: 18,
         fontWeight: '400',
-        color: '#9CA3AF',
+        color: '#E5E7EB',
         textAlign: 'center',
     },
     button: {
         backgroundColor: '#82F341',
         paddingVertical: 18,
-        paddingHorizontal: 40,
+        paddingHorizontal: 50,
         borderRadius: 50,
         shadowColor: '#82F341',
         shadowOffset: { width: 0, height: 0 },

@@ -22,16 +22,20 @@ export default function QuizScreen({
     onNextQuestion,
 }: QuizScreenProps) {
     const getOptionStyle = (option: string) => {
-        if (selectedOption) {
-            const isCorrect = option === currentQuestion.correctAnswer;
-            if (isCorrect) {
-                return styles.correctOption;
-            }
-            if (option === selectedOption && !isCorrect) {
-                return styles.incorrectOption;
-            }
+        if (!selectedOption) return styles.option;
+
+        const isCorrect = option === currentQuestion.correctAnswer;
+        const isSelected = option === selectedOption;
+
+        if (isCorrect) {
+            return [styles.option, styles.correctOption];
         }
-        return {};
+        if (isSelected && !isCorrect) {
+            return [styles.option, styles.incorrectOption];
+        }
+        
+        // Deixa as outras opções com opacidade menor após uma seleção
+        return [styles.option, styles.disabledOption];
     }
 
     return (
@@ -44,7 +48,7 @@ export default function QuizScreen({
                 {currentQuestion.options.map((option) => (
                     <TouchableOpacity
                         key={option}
-                        style={[styles.option, getOptionStyle(option)]}
+                        style={getOptionStyle(option)}
                         onPress={() => onOptionPress(option)}
                         disabled={isOptionsDisabled}
                     >
@@ -55,7 +59,7 @@ export default function QuizScreen({
 
             {selectedOption && (
                 <TouchableOpacity style={styles.nextButton} onPress={onNextQuestion}>
-                    <Text style={styles.nextButtonText}>Próxima Pergunta</Text>
+                    <Text style={styles.nextButtonText}>Próxima</Text>
                 </TouchableOpacity>
             )}
         </View>
@@ -65,67 +69,65 @@ export default function QuizScreen({
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#1C1C1E',
-        padding: 24,
+        backgroundColor: '#040C18',
+        padding: 20,
+        justifyContent: "center"
     },
     card: {
-        backgroundColor: '#2C2C2E',
-        borderRadius: 20,
-        padding: 30,
-        marginBottom: 24,
-        justifyContent: 'center',
-        alignItems: 'center',
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 4 },
-        shadowOpacity: 0.3,
-        shadowRadius: 5,
-        elevation: 8,
+        backgroundColor: 'rgba(31, 41, 55, 0.9)',
+        borderRadius: 15,
+        padding: 25,
+        marginBottom: 30,
+        borderColor: '#82F341',
+        borderWidth: 1,
     },
     questionText: {
-        fontSize: 26,
+        fontSize: 24,
         fontWeight: '600',
-        color: '#EFEFEF',
+        color: '#E5E7EB',
         textAlign: 'center',
-        lineHeight: 32,
     },
     optionsContainer: {
-        flex: 1,
-        justifyContent: 'flex-start',
+        width: "100%",
+        marginBottom: 30,
     },
     option: {
-        backgroundColor: '#2C2C2E',
-        padding: 18,
+        backgroundColor: '#1F2937',
+        padding: 20,
         borderRadius: 15,
         borderWidth: 2,
-        borderColor: '#3A3A3C',
-        marginBottom: 10,
+        borderColor: '#4B5563',
+        marginBottom: 12,
     },
     optionText: {
         fontSize: 18,
-        color: '#EFEFEF',
-        textAlign: 'center', // Centraliza o texto das alternativas
+        color: '#E5E7EB',
+        textAlign: 'center',
+        fontWeight: '500',
     },
     correctOption: {
-        borderColor: '#34C759',
-        backgroundColor: '#1F2925',
+        borderColor: '#82F341', // Verde-portal para resposta correta
+        backgroundColor: 'rgba(130, 243, 65, 0.2)',
     },
     incorrectOption: {
-        borderColor: '#FF3B30',
-        backgroundColor: '#2E2020',
+        borderColor: '#FF414D', // Vermelho-alerta para resposta incorreta
+        backgroundColor: 'rgba(255, 65, 77, 0.2)',
+    },
+    disabledOption: {
+        opacity: 0.5,
     },
     nextButton: {
-        backgroundColor: '#8afb67ff', // Cor rosa vibrante
+        backgroundColor: '#82F341', // Verde-portal
         paddingVertical: 18,
         paddingHorizontal: 40,
-        borderRadius: 30,
-        marginTop: 24,
+        borderRadius: 50,
+        marginTop: 10,
         alignSelf: 'center',
     },
     nextButtonText: {
-        color: '#fff',
+        color: '#040C18',
         fontSize: 18,
-        fontWeight: '600',
+        fontWeight: '700',
         textTransform: 'uppercase',
-        letterSpacing: 1,
     },
 });
