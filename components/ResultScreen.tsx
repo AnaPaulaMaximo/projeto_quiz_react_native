@@ -1,13 +1,10 @@
-import { StyleSheet, Text, View, TouchableOpacity, ImageBackground } from "react-native";
+import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 
 type ResultScreenProps = {
     score: number;
     totalQuestions: number;
     onPlayAgain: () => void;
 };
-
-// 1. Imagem de fundo definida
-const backgroundImage = require('../assets/images/background.png');
 
 export default function ResultScreen({ score, totalQuestions, onPlayAgain }: ResultScreenProps) {
     const getResultMessage = () => {
@@ -17,14 +14,9 @@ export default function ResultScreen({ score, totalQuestions, onPlayAgain }: Res
         if (percentage >= 40) return "Você precisa de mais Szechuan Sauce no cérebro.";
         return "Ai, caramba! Isso foi constrangedor.";
     };
-    
+
     return (
-        // 2. O <View> principal foi substituído por <ImageBackground>
-        <ImageBackground 
-            source={backgroundImage} 
-            style={styles.container}
-            resizeMode="cover"
-        >
+        <View style={styles.container}>
             <View style={styles.contentCard}>
                 <Text style={styles.title}>FIM DE JOGO!</Text>
                 <Text style={styles.resultMessage}>{getResultMessage()}</Text>
@@ -36,7 +28,7 @@ export default function ResultScreen({ score, totalQuestions, onPlayAgain }: Res
             <TouchableOpacity style={styles.button} onPress={onPlayAgain}>
                 <Text style={styles.buttonText}>Jogar Novamente</Text>
             </TouchableOpacity>
-        </ImageBackground>
+        </View>
     );
 };
 
@@ -45,8 +37,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        // 3. A cor de fundo foi removida
-        // backgroundColor: '#040C18',
+        backgroundColor: '#040C18',
         padding: 20,
     },
     contentCard: {
