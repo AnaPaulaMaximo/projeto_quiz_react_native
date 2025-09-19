@@ -39,7 +39,7 @@ Siga os passos abaixo para executar o projeto em seu ambiente de desenvolvimento
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/seu-usuario/projeto_quiz_react_native.git](https://github.com/seu-usuario/projeto_quiz_react_native.git)
+    git clone (https://github.com/AnaPaulaMaximo/projeto_quiz_react_native.git)
     ```
 
 2.  **Navegue até o diretório do projeto:**
