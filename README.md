@@ -78,16 +78,5 @@ projeto_quiz_react_native/
 ├── questions.json     # Banco de dados de perguntas do quiz
 └── package.json       # Dependências e scripts do projeto
 ```
-
-## 🖼️ Telas do Aplicativo
-
-*(Adicione aqui screenshots do seu aplicativo em execução para um README mais visual)*
-
-**Tela de Boas-vindas**
-`[Imagem da Tela de Boas-vindas]`
-
-**Tela do Quiz**
-`[Imagem da Tela do Quiz]`
-
-**Tela de Resultados**
-`[Imagem da Tela de Resultados]`
+## Produzido por:
+Ana Paula Maximo
