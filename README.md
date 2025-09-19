@@ -1,50 +1,93 @@
-# Welcome to your Expo app 👋
+# Quiz Rick and Morty
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Um aplicativo de quiz divertido e interativo para testar seus conhecimentos sobre o multiverso maluco de Rick and Morty!
 
-## Get started
+## 📜 Sobre o Projeto
 
-1. Install dependencies
+Este é um aplicativo móvel desenvolvido com React Native e Expo, que apresenta um quiz temático sobre a popular série de animação "Rick and Morty".
 
-   ```bash
-   npm install
-   ```
+O aplicativo exibe perguntas de múltipla escolha de forma aleatória e, ao final, apresenta a pontuação do usuário com uma mensagem divertida inspirada nos personagens.
 
-2. Start the app
+## ✨ Funcionalidades
 
-   ```bash
-   npx expo start
-   ```
+* **Tela de Boas-vindas:** Uma tela inicial estilizada para dar as boas-vindas ao usuário e iniciar o quiz.
+* **Quiz Aleatório:** A cada novo jogo, 5 perguntas são selecionadas aleatoriamente de um banco de dados, garantindo uma experiência diferente a cada vez.
+* **Feedback Instantâneo:** O aplicativo fornece feedback visual imediato (cores nas opções) para respostas corretas e incorretas.
+* **Efeitos Sonoros:** Sons distintos são reproduzidos para acertos e erros, melhorando a experiência do usuário.
+* **Tela de Resultados:** Ao final do quiz, o usuário vê sua pontuação e uma mensagem personalizada baseada em seu desempenho.
+* **Jogar Novamente:** Opção para reiniciar o quiz e tentar uma nova rodada de perguntas.
 
-In the output, you'll find options to open the app in a
+## 🛠️ Tecnologias Utilizadas
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+* **React Native:** Framework para desenvolvimento de aplicativos móveis multiplataforma.
+* **Expo:** Plataforma e conjunto de ferramentas para criar e implantar aplicativos React Native.
+* **TypeScript:** Superset do JavaScript que adiciona tipagem estática ao código.
+* **Expo Router:** Para navegação baseada em arquivos.
+* **Expo AV:** Para reprodução dos efeitos sonoros.
+* **Componentes Reutilizáveis:** O projeto é estruturado com componentes para cada tela (Boas-vindas, Quiz, Resultados), facilitando a manutenção.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🚀 Como Executar o Projeto
 
-## Get a fresh project
+Siga os passos abaixo para executar o projeto em seu ambiente de desenvolvimento.
 
-When you're ready, run:
+**Pré-requisitos:**
 
-```bash
-npm run reset-project
+* Node.js e npm (ou Yarn) instalados.
+* Expo Go instalado em seu dispositivo móvel (Android ou iOS) ou um emulador/simulador configurado.
+
+**Instalação e Execução:**
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/seu-usuario/projeto_quiz_react_native.git](https://github.com/seu-usuario/projeto_quiz_react_native.git)
+    ```
+
+2.  **Navegue até o diretório do projeto:**
+    ```bash
+    cd projeto_quiz_react_native
+    ```
+
+3.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
+
+4.  **Inicie o servidor de desenvolvimento:**
+    ```bash
+    npx expo start
+    ```
+
+5.  **Abra o aplicativo:**
+    * **No seu dispositivo móvel:** Escaneie o código QR exibido no terminal com o aplicativo Expo Go.
+    * **No emulador/simulador:** Pressione `a` para o emulador Android ou `i` para o simulador iOS no terminal.
+
+## 📁 Estrutura do Projeto
+
+```
+projeto_quiz_react_native/
+├── app/
+│   ├── _layout.tsx    # Configuração do layout principal da navegação
+│   └── index.tsx      # Ponto de entrada e lógica principal do quiz
+├── assets/
+│   ├── fonts/         # Fontes personalizadas (se houver)
+│   └── sounds/        # Efeitos sonoros para respostas corretas/incorretas
+├── components/
+│   ├── QuizScreen.tsx   # Componente da tela do quiz
+│   ├── ResultScreen.tsx # Componente da tela de resultados
+│   └── WelcomeScreen.tsx# Componente da tela de boas-vindas
+├── questions.json     # Banco de dados de perguntas do quiz
+└── package.json       # Dependências e scripts do projeto
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🖼️ Telas do Aplicativo
 
-## Learn more
+*(Adicione aqui screenshots do seu aplicativo em execução para um README mais visual)*
 
-To learn more about developing your project with Expo, look at the following resources:
+**Tela de Boas-vindas**
+`[Imagem da Tela de Boas-vindas]`
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+**Tela do Quiz**
+`[Imagem da Tela do Quiz]`
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+**Tela de Resultados**
+`[Imagem da Tela de Resultados]`
