@@ -69,7 +69,7 @@ projeto_quiz_react_native/
 │   ├── _layout.tsx    # Configuração do layout principal da navegação
 │   └── index.tsx      # Ponto de entrada e lógica principal do quiz
 ├── assets/
-│   ├── fonts/         # Fontes personalizadas (se houver)
+│   ├── fonts/         # Fontes personalizadas 
 │   └── sounds/        # Efeitos sonoros para respostas corretas/incorretas
 ├── components/
 │   ├── QuizScreen.tsx   # Componente da tela do quiz
